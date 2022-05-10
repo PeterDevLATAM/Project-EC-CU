@@ -1,0 +1,9 @@
+body {
+  /* place to set fonts bc font is inherited */
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: --color-black;
+}

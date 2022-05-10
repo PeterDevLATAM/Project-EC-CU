@@ -1,0 +1,16 @@
+.navigation {
+  background-color: $color-primary-0;
+  grid-column: col-start 1/ col-end 12;
+}
+.header{
+    background-color: $color-secondary-1-0;
+    grid-column: full-start / full-end;
+}
+.beneficios{
+    background-color: $color-secondary-2-0;
+    grid-column: full-start / full-end;
+}
+.tutorial{
+    background-color: $color-primary-2;
+    grid-column: full-start / full-end;
+}

@@ -1,20 +1,31 @@
 //COLORS
-.root {
-  --color-primary-0: #1e4eff; // Main Primary color */
-  --color-primary-1: #aec0ff;
-  --color-primary-2: #819cff;
-  --color-primary-3: #002093;
-  --color-primary-4: #001871;
 
-  --color-secondary-1-0: #fffc00; // Main Secondary color (1) */
-  --color-secondary-1-1: #fffea4;
-  --color-secondary-1-2: #fffd70;
-  --color-secondary-1-3: #d9d600;
-  --color-secondary-1-4: #a7a500;
+$color-primary-0: #1e4eff; // Main Primary color */
+$color-primary-1: #aec0ff;
+$color-primary-2: #819cff;
+$color-primary-3: #002093;
+$color-primary-4: #001871;
 
-  --color-secondary-2-0: #ff3d00; // Main Secondary color (2) */
-  --color-secondary-2-1: #ffbaa4;
-  --color-secondary-2-2: #ff9270;
-  --color-secondary-2-3: #d93400;
-  --color-secondary-2-4: #a72800;
-}
+$color-secondary-1-0: #fffc00; // Main Secondary color (1) */
+$color-secondary-1-1: #fffea4;
+$color-secondary-1-2: #fffd70;
+$color-secondary-1-3: #d9d600;
+$color-secondary-1-4: #a7a500;
+
+$color-secondary-2-0: #ff3d00; // Main Secondary color (2) */
+$color-secondary-2-1: #ffbaa4;
+$color-secondary-2-2: #ff9270;
+$color-secondary-2-3: #d93400;
+$color-secondary-2-4: #a72800;
+
+$color-black: #000;
+
+//FONTS
+$default-font-size: 16px;
+
+//REPONSIVE BREAKPOINTS
+
+$bp-xl: 75em; //1200px
+$bp-l: 62.5em; //1000px
+$bp-m: 50em; //800px
+$bp-s: 37.5em; //600px

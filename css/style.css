@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  /* place to set fonts bc font is inherited */
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: --color-black; }
+
+.navigation {
+  background-color: #1e4eff;
+  grid-column: col-start 1/ col-end 12; }
+
+.header {
+  background-color: #fffc00;
+  grid-column: full-start / full-end; }
+
+.beneficios {
+  background-color: #ff3d00;
+  grid-column: full-start / full-end; }
+
+.tutorial {
+  background-color: #819cff;
+  grid-column: full-start / full-end; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) 1fr [full-end];
+  grid-template-rows: 6rem calc(100vh - 6rem) repeat(3, min-content); }
