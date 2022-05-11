@@ -7,3 +7,10 @@ body {
   line-height: 1.7;
   color: --color-black;
 }
+
+.title{
+  &--1{
+    font-weight: 300;
+    font-size: 5rem;
+  }
+}

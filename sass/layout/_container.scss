@@ -1,5 +1,5 @@
 .container{
     display: grid;
     grid-template-columns: [full-start] 1fr  repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) 1fr [full-end]; 
-    grid-template-rows: 6rem calc(100vh - 6rem) repeat(3, min-content);
+    grid-template-rows: 6rem calc(70vh - 6rem) repeat(3, min-content);
 }
