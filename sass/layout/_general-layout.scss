@@ -1,6 +1,6 @@
 .container {
   @include general-layout;
-  grid-template-rows: 7rem 30vh repeat(3, min-content);
+  grid-template-rows: 7rem repeat(4, min-content);
 }
 .navigation-container {
   @include general-layout;
@@ -9,7 +9,7 @@
   align-content: center;
 }
 .navigation {
-  grid-column: col-start 1 / col-end 12;
+  grid-column: content-start / content-end;
   display: grid;
   grid-auto-flow: column;
   max-width: 1180;
@@ -20,8 +20,10 @@
   grid-column: col-start 1 / col-end 12;
   display: grid;
   grid-template-columns: 70% 30%;
+  padding: 10rem 0;
 }
-.header {
+.header{
+    padding-right: 20rem;
 }
 .benefits {
   grid-column: full-start/ full-end;

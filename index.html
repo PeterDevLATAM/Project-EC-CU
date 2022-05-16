@@ -23,22 +23,41 @@
         </div>
         <div class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">Contacto</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Preguntas Frecuentes</a></li>
-            <li class="nav__item "><a class="btn btn--1" href="#">Entrar/Registrarse</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contacto</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav__item">
+              <a class="btn btn--round" href="#">Entrar/Registrarse</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <header class="header-container">
-      <div class="header">Header</div>
-      <div class="calc">Calc</div>
+      <div class="header">
+        <h1 class="heading--1">Envio de Remesas a Cuba desde Ecuador</h1>
+        <h2 class="heading--2 mt-small">100% seguro, económico y transparente</h2>
+        <button class="btn btn--square mt-medium">
+          Enviar USD
+          <svg class="btn__svg">
+            <use xlink:href="img/SVG/sprite.svg#send" />
+          </svg>
+        </button>
+      </div>
+      <div class="calc">
+        <label class="calc__label" for="inp-enviar"> Cantidad a enviar: </label>
+        <input class="calc__input" type="number" id="inp-enviar" />
+        <label class="calc__label" for="inp-recibir"> Cantidad a recibir: </label>
+        <input class="calc__input" type="number" id="inp-recibir"/>
+        <p class="calc__text mt-small">El monto a recibir siempre es en <strong>MLC</strong> en la tarjeta del destinatario</p>
+      </div>
+
     </header>
-    <section class="benefits">
-      Beneficios
-    </section>
+    <section class="benefits">Beneficios</section>
     <section class="prices">Precios</section>
     <footer class="footer">Footer</footer>
-
   </body>
 </html>
