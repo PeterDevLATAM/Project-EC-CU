@@ -31,6 +31,26 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) 1fr [full-end];
-  grid-template-rows: 7rem calc(70vh - 6rem) repeat(3, min-content);
+  grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(max-content, 7rem) [col-end]) 1fr [full-end];
+  grid-template-rows: 7rem 30vh repeat(3, min-content);
   grid-column-gap: 2rem; }
+
+.navigation-container {
+  grid-column: full-start/ full-end;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.05); }
+
+.header-container {
+  grid-column: col-start 1/ col-end 12;
+  display: grid;
+  grid-template-columns: 70% 30%; }
+
+.benefits {
+  grid-column: full-start/ full-end;
+  background-color: #3498DB; }
+
+.prices {
+  grid-column: col-start 1/ col-end 12; }
+
+.footer {
+  grid-column: full-start/ full-end;
+  background-color: #2C3E50; }
