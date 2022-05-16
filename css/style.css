@@ -1,3 +1,10 @@
+/* 
+#2C3E50
+#E74C3C
+#ECF0F1
+#3498DB
+#2980B9
+*/
 *,
 *::before,
 *::after {
@@ -22,61 +29,8 @@ body {
   font-weight: 300;
   font-size: 5rem; }
 
-.logo {
-  display: flex;
-  align-items: center; }
-  .logo__img {
-    height: 5rem;
-    width: 5rem;
-    margin-right: 2rem; }
-
-.nav {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  align-items: center;
-  list-style: none;
-  grid-column-gap: 4rem; }
-  .nav__item {
-    height: 100%;
-    display: grid;
-    align-items: center; }
-    .nav__item:hover, .nav__item:active {
-      color: #002093; }
-    .nav__item--cta {
-      color: #ff3d00;
-      font-weight: 400; }
-  .nav__link--cta {
-    border: 2px solid #ff3d00;
-    border-radius: 1rem;
-    padding: .5rem; }
-  .nav__link:link, .nav__link:visited {
-    text-decoration: none;
-    color: currentColor; }
-
-.navigation {
-  grid-column: col-start 1/ col-end 12;
-  display: grid;
-  grid-auto-flow: column; }
-
-.header {
-  grid-column: full-start / full-end;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem;
-  background-color: #eee; }
-
-.beneficios {
-  background-color: #ff3d00;
-  grid-column: full-start / full-end; }
-
-.tutorial {
-  background-color: #819cff;
-  grid-column: full-start / full-end; }
-
 .container {
   display: grid;
   grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) 1fr [full-end];
-  grid-template-rows: 6rem calc(70vh - 6rem) repeat(3, min-content); }
+  grid-template-rows: 7rem calc(70vh - 6rem) repeat(3, min-content);
+  grid-column-gap: 2rem; }
