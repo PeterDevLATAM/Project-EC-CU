@@ -1,0 +1,52 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  cursor: pointer;
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $color-primary-0;
+    margin-right: 2rem;
+  }
+  &__text {
+    font-size: 2rem;
+  }
+}
+
+.nav {
+  font-size: 1.8rem;
+  justify-self: end;
+
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 2rem;
+    list-style: none;
+    align-items: center;
+  }
+  &__link:visited,
+  &__link:link {
+    text-decoration: none;
+    color: currentColor;
+    &:hover {
+      color: $color-secondary-1-1;
+    }
+  }
+} 
+
+.btn {
+    background-color: $color-primary-0;
+    padding: 1rem;
+    text-decoration: none;
+    &--1 {
+      border-radius: 10rem;
+      color: $color-white;
+      
+    }
+    &:hover{
+      background-color:#c22818 ;    
+    }
+  }
+  

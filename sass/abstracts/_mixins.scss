@@ -1,0 +1,7 @@
+@mixin general-layout{
+    display: grid;
+    grid-template-columns:
+    [full-start] 1fr repeat(12, [col-start] minmax(max-content, 9rem) [col-end])
+    1fr [full-end];
+    grid-column-gap: 2rem;
+}

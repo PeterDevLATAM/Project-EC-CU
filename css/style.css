@@ -29,18 +29,68 @@ body {
   font-weight: 300;
   font-size: 5rem; }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  cursor: pointer; }
+  .logo__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #E74C3C;
+    margin-right: 2rem; }
+  .logo__text {
+    font-size: 2rem; }
+
+.nav {
+  font-size: 1.8rem;
+  justify-self: end; }
+  .nav__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 2rem;
+    list-style: none;
+    align-items: center; }
+  .nav__link:visited, .nav__link:link {
+    text-decoration: none;
+    color: currentColor; }
+    .nav__link:visited:hover, .nav__link:link:hover {
+      color: #2980B9; }
+
+.btn {
+  background-color: #E74C3C;
+  padding: 1rem;
+  text-decoration: none; }
+  .btn--1 {
+    border-radius: 10rem;
+    color: #ECF0F1; }
+  .btn:hover {
+    background-color: #c22818; }
+
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(max-content, 7rem) [col-end]) 1fr [full-end];
-  grid-template-rows: 7rem 30vh repeat(3, min-content);
-  grid-column-gap: 2rem; }
+  grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(max-content, 9rem) [col-end]) 1fr [full-end];
+  grid-column-gap: 2rem;
+  grid-template-rows: 7rem 30vh repeat(3, min-content); }
 
 .navigation-container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(max-content, 9rem) [col-end]) 1fr [full-end];
+  grid-column-gap: 2rem;
   grid-column: full-start/ full-end;
-  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.05);
+  align-content: center; }
+
+.navigation {
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 1180;
+  align-items: center; }
 
 .header-container {
-  grid-column: col-start 1/ col-end 12;
+  grid-column: col-start 1 / col-end 12;
   display: grid;
   grid-template-columns: 70% 30%; }
 
@@ -49,7 +99,7 @@ body {
   background-color: #3498DB; }
 
 .prices {
-  grid-column: col-start 1/ col-end 12; }
+  grid-column: col-start 1 / col-end 12; }
 
 .footer {
   grid-column: full-start/ full-end;

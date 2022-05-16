@@ -1,33 +1,37 @@
 .container {
-  display: grid;
-  grid-template-columns: [full-start] 1fr repeat(
-      12,
-      [col-start] minmax(max-content, 7rem) [col-end]
-    ) 1fr [full-end];
+  @include general-layout;
   grid-template-rows: 7rem 30vh repeat(3, min-content);
-  grid-column-gap: 2rem;
 }
 .navigation-container {
+  @include general-layout;
   grid-column: full-start/ full-end;
   box-shadow: 0 3px 1rem rgba(#000, 0.05);
+  align-content: center;
 }
-.header-container{
-    grid-column: col-start 1/ col-end 12;
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-.header{
-
-}
-.benefits{
-    grid-column: full-start/ full-end;
-    background-color: $color-secondary-1-0;
+.navigation {
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 1180;
+  align-items: center;
 }
 
-.prices{
-    grid-column: col-start 1/ col-end 12;
+.header-container {
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
-.footer{
-    grid-column: full-start/ full-end;
-    background-color:$color-secondary-2-0 ;
+.header {
+}
+.benefits {
+  grid-column: full-start/ full-end;
+  background-color: $color-secondary-1-0;
+}
+
+.prices {
+  grid-column: col-start 1 / col-end 12;
+}
+.footer {
+  grid-column: full-start/ full-end;
+  background-color: $color-secondary-2-0;
 }
