@@ -87,7 +87,8 @@ body {
   padding: 1.2rem;
   text-decoration: none;
   color: #ECF0F1;
-  border: none; }
+  border: none;
+  transition: all .2s; }
   .btn--round {
     border-radius: 10rem; }
   .btn--square {
@@ -106,6 +107,19 @@ body {
     width: 2rem;
     height: 2rem;
     fill: #ECF0F1; }
+
+.btn-2 {
+  color: #ECF0F1;
+  text-decoration: none;
+  border: 1px solid #ECF0F1;
+  border-radius: 4rem;
+  background-color: none;
+  padding: .8rem;
+  font-size: 1.4rem;
+  transition: all .2s; }
+  .btn-2:hover {
+    background-color: #E74C3C;
+    border: none; }
 
 .calc {
   display: grid;
@@ -173,6 +187,34 @@ body {
       background-color: #cccccc; }
     .price-category__medal--gold {
       background-color: #d4af37; }
+
+.contact-box {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem; }
+  .contact-box__icon {
+    width: 6rem;
+    height: 6rem;
+    fill: #ECF0F1;
+    cursor: pointer; }
+
+.footer-nav {
+  color: #ECF0F1; }
+  .footer-nav__list {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 3rem;
+    justify-items: center;
+    justify-content: center; }
+  .footer-nav__link:link, .footer-nav__link:visited {
+    color: currentColor;
+    text-decoration: none; }
+  .footer-nav__item {
+    font-size: 1.4rem; }
+
+.footer-copy {
+  color: #a09f9f; }
 
 .container {
   display: grid;
@@ -244,4 +286,10 @@ body {
   grid-column-gap: 2rem; }
 
 .footer {
-  grid-column: col-start 1 / col-end 12; }
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  grid-gap: 8rem; }

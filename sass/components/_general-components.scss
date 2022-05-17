@@ -42,6 +42,8 @@
   text-decoration: none;
   color: $color-white;
   border: none;
+  transition: all .2s;
+
   &--round {
     border-radius: 10rem;
   }
@@ -64,6 +66,21 @@
     width: 2rem;
     height: 2rem;
     fill: $color-white;
+  }
+}
+
+.btn-2{
+  color: $color-white;
+  text-decoration: none;
+  border: 1px solid $color-white;
+  border-radius: 4rem;
+  background-color: none;
+  padding: .8rem;
+  font-size: 1.4rem;
+  transition: all .2s;
+  &:hover{
+    background-color: $color-primary-0;
+    border: none;
   }
 }
 
@@ -99,10 +116,6 @@
     height: 9rem;
     fill: $color-white;
     margin-top: -2rem;
-  }
-  &__text {
-  }
-  &__title {
   }
 }
 
@@ -161,4 +174,38 @@
       background-color: #d4af37;
     }
   }
+}
+.contact-box{
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  
+  &__icon{
+    width: 6rem;
+    height: 6rem;
+    fill: $color-white;
+    cursor: pointer;
+  }
+}
+
+.footer-nav{
+  color: $color-white;
+ &__list{
+   list-style: none;
+   display: grid;
+   grid-auto-flow: column;
+   grid-gap: 3rem;
+   justify-items: center;
+   justify-content: center;
+ }
+ &__link:link, &__link:visited{
+   color: currentColor;
+   text-decoration: none;
+ }
+ &__item{
+   font-size: 1.4rem;
+ }
+}
+.footer-copy{
+  color: rgb(160, 159, 159);
 }

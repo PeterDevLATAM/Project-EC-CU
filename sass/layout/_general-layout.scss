@@ -68,4 +68,10 @@
 }
 .footer{
   grid-column: col-start 1 / col-end 12;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  grid-gap: 8rem;
 }
