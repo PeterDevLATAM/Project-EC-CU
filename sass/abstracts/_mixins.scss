@@ -1,7 +1,37 @@
-@mixin general-layout{
-    display: grid;
-    grid-template-columns:
-    [full-start] 1fr [content-start] repeat(12, [col-start] minmax(min-content, 9rem) [col-end])
+@mixin general-layout {
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr [content-start] repeat(
+      12,
+      [col-start] minmax(min-content, 9rem) [col-end]
+    )
     [content-end] 1fr [full-end];
-    grid-column-gap: 2rem;
+  grid-column-gap: 2rem;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint== bp-s {
+    @media only screen and (max-width: 34.375em) {
+      //550px
+      @content;
+    }
+  }
+  @if $breakpoint== bp-m {
+    //800px
+    @media only screen and (max-width: 50em) {
+      @content;
+    }
+  }
+  @if $breakpoint== bp-l {
+    //1000px
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint== bp-xl {
+    //1400px
+    @media only screen and (max-width: 87.5em) {
+      @content;
+    }
+  }
 }

@@ -9,4 +9,11 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @include respond(bp-xl){
+      font-size: 55%;
+    }
+    @include respond(bp-l){
+      font-size: 47%;
+    }
 }

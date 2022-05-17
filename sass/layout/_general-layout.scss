@@ -14,6 +14,9 @@
   grid-auto-flow: column;
   max-width: 1180;
   align-items: center;
+  @include respond(bp-xl) {
+    padding: 1rem 0;
+  }
 }
 
 .header-container {
@@ -22,9 +25,19 @@
   grid-template-columns: 70% 30%;
   padding-top: 10rem;
   padding-bottom: 20rem;
+
+  @include respond(bp-xl) {
+    padding: 5rem;
+  }
+  @include respond(bp-m) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content) 1fr;
+  }
 }
-.header{
-    padding-right: 20rem;
+.header {
+  @include respond(bp-m) {
+    grid-column: 1/3;
+  }
 }
 .benefits-container {
   grid-column: full-start/ full-end;
@@ -36,7 +49,7 @@
   padding-bottom: 25rem;
 }
 
-.benefits{
+.benefits {
   grid-column: content-start/ content-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -44,8 +57,11 @@
   grid-row-gap: 10rem;
   justify-content: center;
   justify-items: center;
-  &__header{
-    grid-column: 1/-1 ;
+  &__header {
+    grid-column: 1/-1;
+  }
+  @include respond(bp-xl) {
+    padding: 5rem;
   }
 }
 
@@ -59,14 +75,20 @@
 
   grid-template-columns: minmax(min-content, 95rem);
   padding: 20rem 0;
-
+  
+  @include respond(bp-xl) {
+    padding: 5rem;
+  }
+  @include respond(bp-s) {
+    padding: 1rem;
+  }
 }
 .footer-container {
   grid-column: full-start/ full-end;
   background-color: $color-secondary-2-0;
   @include general-layout;
 }
-.footer{
+.footer {
   grid-column: col-start 1 / col-end 12;
   display: grid;
   justify-content: center;
