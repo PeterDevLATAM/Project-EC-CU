@@ -86,3 +86,22 @@
     width: 27rem;
   }
 }
+
+.card {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 2rem;
+
+  &__icon {
+    grid-row: 1/3;
+
+    width: 9rem;
+    height: 9rem;
+    fill: $color-white;
+    margin-top: -2rem;
+  }
+  &__text {
+  }
+  &__title {
+  }
+}
