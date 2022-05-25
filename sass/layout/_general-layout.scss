@@ -1,6 +1,6 @@
 .container {
   @include general-layout;
-  grid-template-rows: 7rem repeat(4, min-content);
+  grid-template-rows: 7rem;
 }
 .navigation-container {
   @include general-layout;
@@ -104,12 +104,19 @@
 .login-main{
   @include general-layout;
   grid-column: col-start 1/ col-end 12;
+  align-items: center;
 }
 .signin-left{
-  grid-column: col-start 1/ col-end 6;
-  padding: 10rem 3rem;
+  grid-row: 1/2;
+  grid-column: col-start 1/ col-start 6;
+  width: 27rem;
+  justify-self: center;
 }
 .signin-right{
-  grid-column: col-start 7/ col-end 12;
-  background-color: lightblue;
+  grid-row: 1/2;
+  grid-column: col-start 6 / full-end;
+  background-image: url("../../img/stephan-valentin-6NT7jy6OU9I-large.jpg") ;
+  background-size: cover;
+  background-position: bottom;
+  height: calc(100vh - 7rem);
 }

@@ -45,15 +45,30 @@
               <form class="sign-form">
                   <label for="sign-email" class="sign-form__label">Correo electrónico</label>
                   <input type="text" placeholder="Correo Electronico" id="sign-email" class="sign-form__input">
-                  <label for="sign-password">Contraseña</label>
-                  <input type="password" id="sign-password" placeholder="Contraseña">
-                  <button class="sign-form__btn">Acceder</button>
+                  <label for="sign-password" class="sign-form__label">Contraseña</label>
+                  <input type="password" id="sign-password" placeholder="Contraseña" class="sign-form__input">
+                  <button class="btn btn--square-2 mt-medium">Acceder</button>
               </form>
+              <div class="sign-form__separator mt-medium">Or</div>
+              <button class="sign-form__btn mt-medium">Acceder con 
+                  <svg class="sign-form__svg">
+                      <use href="/img/SVG/sprite.svg#google-filled"/>
+                  </svg>
+              </button>
+              <button class="sign-form__btn mt-small">Acceder con 
+                <svg class="sign-form__svg">
+                    <use href="/img/SVG/sprite.svg#facebook-btn"/>
+                </svg>
+            </button>
+
           </div>
+
           <div class="signin-right">
-              Right
+              &nbsp;
           </div>
       </main>
+
+
     <footer class="footer-container">
       <div class="footer">
         <div class="contact-box">
