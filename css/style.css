@@ -50,6 +50,10 @@ body {
   text-transform: uppercase;
   font-weight: 300; }
 
+.heading--5 {
+  font-size: 2.4rem;
+  font-weight: 300; }
+
 .mt-small {
   margin-top: 2rem; }
 
@@ -58,6 +62,9 @@ body {
 
 .mt-large {
   margin-top: 8rem; }
+
+.mb-small {
+  margin-bottom: 5rem; }
 
 .logo {
   display: flex;
@@ -332,7 +339,8 @@ body {
   justify-content: center;
   justify-items: center;
   grid-template-columns: minmax(min-content, 95rem);
-  padding: 20rem 0; }
+  padding: 20rem 0;
+  margin-bottom: 10rem; }
   @media only screen and (max-width: 87.5em) {
     .prices {
       padding: 5rem; } }
@@ -355,3 +363,17 @@ body {
   padding-top: 10rem;
   padding-bottom: 5rem;
   grid-gap: 8rem; }
+
+.login-main {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [content-start] repeat(12, [col-start] minmax(min-content, 9rem) [col-end]) [content-end] 1fr [full-end];
+  grid-column-gap: 2rem;
+  grid-column: col-start 1/ col-end 12; }
+
+.signin-left {
+  grid-column: col-start 1/ col-end 6;
+  padding: 10rem 3rem; }
+
+.signin-right {
+  grid-column: col-start 7/ col-end 12;
+  background-color: lightblue; }
