@@ -261,6 +261,7 @@
   max-width: 27rem;
 
   &__label {
+    margin-top: 1.5rem;
     color: $color-black;
     font-size: 1.5rem;
   }
@@ -269,7 +270,7 @@
     border: 1px solid $color-grey-1;
     padding: 1rem;
   }
-  &__separator{
+  &__separator {
     font-size: 1.8rem;
     font-weight: 300;
     color: $color-grey-1;
@@ -279,14 +280,15 @@
     align-items: center;
     justify-items: center;
 
-    &::after, &::before{
+    &::after,
+    &::before {
       content: "";
       width: 95%;
       height: 1px;
       background-color: $color-grey-1;
     }
   }
-  &__btn{
+  &__btn {
     border: 2px solid $color-primary-0;
     display: grid;
     grid-auto-flow: column;
@@ -302,10 +304,13 @@
     text-transform: uppercase;
     font-weight: bold;
   }
-  &__svg{
+  &__svg {
     width: 3.2rem;
     height: 3.2rem;
     fill: $color-primary-0;
   }
+  &__link{
+    color: $color-secondary-1-0;
+    text-decoration: underline;
+  }
 }
-

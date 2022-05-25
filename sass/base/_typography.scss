@@ -34,3 +34,10 @@ body {
     font-weight: 300;
   }
 }
+
+.body{
+  &--1{
+    font-size: 1.4rem;
+    color: $color-grey-1;
+  }
+}

@@ -55,6 +55,10 @@ body {
   font-size: 2.4rem;
   font-weight: 300; }
 
+.body--1 {
+  font-size: 1.4rem;
+  color: #BABABA; }
+
 .mt-small {
   margin-top: 2rem; }
 
@@ -276,6 +280,7 @@ body {
   grid-gap: 1rem;
   max-width: 27rem; }
   .sign-form__label {
+    margin-top: 1.5rem;
     color: #000;
     font-size: 1.5rem; }
   .sign-form__input {
@@ -314,6 +319,9 @@ body {
     width: 3.2rem;
     height: 3.2rem;
     fill: #E74C3C; }
+  .sign-form__link {
+    color: #3498DB;
+    text-decoration: underline; }
 
 .container {
   display: grid;
@@ -334,7 +342,8 @@ body {
   display: grid;
   grid-auto-flow: column;
   max-width: 1180;
-  align-items: center; }
+  align-items: center;
+  z-index: 1000; }
   @media only screen and (max-width: 87.5em) {
     .navigation {
       padding: 1rem 0; } }
@@ -423,14 +432,16 @@ body {
 
 .signin-left {
   grid-row: 1/2;
-  grid-column: col-start 1/ col-start 6;
+  grid-column: col-start 1/ col-start 4;
   width: 27rem;
   justify-self: center; }
 
 .signin-right {
   grid-row: 1/2;
   grid-column: col-start 6 / full-end;
-  background-image: url("../../img/stephan-valentin-6NT7jy6OU9I-large.jpg");
+  background-image: linear-gradient(to right, white 0 1%, transparent 10% 100%), url("../../img/stephan-valentin-6NT7jy6OU9I-large.jpg");
   background-size: cover;
   background-position: bottom;
-  height: calc(100vh - 7rem); }
+  height: calc(100vh - 7rem);
+  overflow: hidden;
+  z-index: -100; }

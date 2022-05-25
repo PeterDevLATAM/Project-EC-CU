@@ -17,6 +17,7 @@
   @include respond(bp-xl) {
     padding: 1rem 0;
   }
+  z-index: 1000;
 }
 
 .header-container {
@@ -108,15 +109,17 @@
 }
 .signin-left{
   grid-row: 1/2;
-  grid-column: col-start 1/ col-start 6;
+  grid-column: col-start 1/ col-start 4;
   width: 27rem;
   justify-self: center;
 }
 .signin-right{
   grid-row: 1/2;
   grid-column: col-start 6 / full-end;
-  background-image: url("../../img/stephan-valentin-6NT7jy6OU9I-large.jpg") ;
+  background-image: linear-gradient(to right, white 0 1%, transparent 10% 100%), url("../../img/stephan-valentin-6NT7jy6OU9I-large.jpg") ;
   background-size: cover;
   background-position: bottom;
   height: calc(100vh - 7rem);
+  overflow: hidden;
+  z-index: -100;
 }
