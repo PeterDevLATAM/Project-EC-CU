@@ -321,7 +321,8 @@ body {
     fill: #E74C3C; }
   .sign-form__link {
     color: #3498DB;
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
 
 .container {
   display: grid;
