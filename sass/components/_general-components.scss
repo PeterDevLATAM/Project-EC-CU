@@ -382,12 +382,9 @@
   font-size: 1.4rem;
   font-weight: normal;
 }
-.dash-oper {
-  background-color: white;
+.oper-card {
   width: 100%;
   margin: 6rem auto;
-  border-radius: 1rem;
-  box-shadow: 0 1px 0.5rem rgba(#000000, 0.25);
   padding-bottom: 3rem;
 }
 .oper-table {
@@ -440,9 +437,85 @@
   }
 }
 
-.card {
+.dash-card {
+  box-shadow: $card-shadow;
+  background-color: white;
+  border-radius: 1rem;
   &__title {
     padding-top: 2.2rem;
     padding-left: 4.3rem;
+  }
+}
+
+.user-card {
+  height: 100%;
+}
+
+.medal {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  &--bronce {
+    background-color: #cd7f32;
+  }
+  &--title {
+    margin-left: 2rem;;
+  }
+}
+
+.user-c-content {
+  width: 100%;
+  margin-top: 3.2rem;
+  display: grid;
+  justify-content: center;
+  color: $color-secondary-2-0;
+  padding-bottom: 4rem;
+
+  &__name {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+
+  }
+  &__progress-bar {
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: $color-grey-3;
+    position: relative;
+    &--1{
+      width: 33%;
+      background-color: $color-secondary-1-0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__progress-def {
+    font-weight: 400;
+    color: $color-grey-1;
+    margin-top: 1rem;
+  }
+  &__data {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+  }
+  &__quantity {
+    margin-right: 2.2rem;
+  }
+  &__amount {
+  }
+  &__graph-area {
+    margin-top: 3rem;
+  }
+  &__graph-title {
+  }
+  &__graph {
+    margin-top: 2.8rem;
+    height: 10rem;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
   }
 }

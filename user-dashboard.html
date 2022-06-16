@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -42,8 +42,8 @@
 
     <div class="dashboard-container">
       <main class="dashboard-main">
-        <div class="dash-oper">
-          <h4 class="heading heading--card card card__title">Operaciones</h4>
+        <div class="oper-card dash-card">
+          <h4 class="heading heading--card dash-card__title">Operaciones</h4>
           <table class="oper-table">
             <thead>
               <tr class="oper-table__head">
@@ -147,12 +147,47 @@
             </tbody>
           </table>
         </div>
+
         <button class="btn btn--square prices__btn">
           Enviar USD
           <svg class="btn__svg">
             <use href="img/SVG/sprite.svg#send" />
           </svg>
         </button>
+        <div class="dash-bottom">
+          <div class="user-card dash-card">
+            <h4 class="heading heading--card dash-card__title">
+              Usuario
+              <span class="medal medal--bronce medal--title">&nbsp;</span>
+            </h4>
+
+            <div class="user-c-content">
+              <div class="user-c-content__name">Reinaldo Tamayo Jimenez</div>
+              <div class="user-c-content__progress-bar">
+                &nbsp;
+                <div class="user-c-content__progress-bar user-c-content__progress-bar--1">&nbsp;</div>
+              </div>
+              <div class="user-c-content__progress-def">
+                Preogreso para categoria Plata
+              </div>
+              <div class="user-c-content__data">
+                <div class="user-c-content__quantity">4 envios</div>
+                <div class="user-c-content__amount">560 usd</div>
+              </div>
+              <div class="user-c-content__graph-area">
+                <div class="user-c-content__graph-title">
+                  Envios por beneficiaro
+                </div>
+                <div class="user-c-content__graph">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <div class="benef-card dash-card">
+            <h4 class="heading heading--card dash-card__title">
+              Beneficiarios
+            </h4>
+          </div>
+        </div>
       </main>
 
       <div class="side-bar">
