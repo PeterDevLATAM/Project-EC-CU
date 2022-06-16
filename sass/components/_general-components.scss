@@ -258,7 +258,8 @@
 .sign-form {
   display: grid;
   grid-gap: 1rem;
-  max-width: 27rem;
+  width: 100%;
+  min-width: 25.56rem;
 
   &__label {
     margin-top: 1.5rem;
@@ -314,4 +315,16 @@
     text-decoration: underline;
     cursor: pointer;
   }
+}
+
+/////////// SIDE BAR DASHBOARD
+
+.side-nav{
+  &__list{
+    list-style: none;
+  }
+  &__item{}
+  &__link{}
+  &__text{}
+  &__icon{}
 }

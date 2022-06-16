@@ -15,7 +15,7 @@
   max-width: 1180;
   align-items: center;
   @include respond(bp-xl) {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
   }
   z-index: 1000;
 }
@@ -108,9 +108,30 @@
 }
 .signin-left {
   grid-row: 1/2;
-  grid-column: col-start 1 / col-start 4;
-  width: 27rem;
+  grid-column: col-start 2 / col-start 4;
+  width: 35rem;
   justify-self: center;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .2s;
+  @include respond(bp-l){
+    grid-column: col-start 2 / col-end 5;
+    background-color: rgba($color-white, 0.95);
+    width: 70rem;
+    padding: 9rem 18rem;
+    border-radius: 1rem;
+  }
+  @include respond(bp-m){
+    grid-column: col-start 1 / col-end 12;
+  }
+  @include respond(bp-s){
+   width: 100%;
+   justify-content: center;
+   padding: 9rem;
+
+  }
 }
 .signin-right {
   grid-row: 1/2;
@@ -122,15 +143,21 @@
   height: calc(100vh - 7rem);
   overflow: hidden;
   z-index: -100;
+  @include respond(bp-l){
+    grid-column: col-start 1 / col-end 12;
+    background-image: url("../../img/stephan-valentin-6NT7jy6OU9I-large.jpg");
+    background-size: cover;
+  }
+  
 }
 
-///////// DASBOARD PAGE
+///////// DASHBOARD PAGE
 .dashboard-main {
   grid-column: col-start 3 / col-end 12;
   @include general-layout;
   background-color: $color-white;
 }
-.side-nav {
+.side-bar {
   grid-column: col-start 1 / col-end 2;
   grid-row: 2/3;
   background-color: $color-secondary-2-0;

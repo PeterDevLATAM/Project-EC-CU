@@ -278,7 +278,8 @@ body {
 .sign-form {
   display: grid;
   grid-gap: 1rem;
-  max-width: 27rem; }
+  width: 100%;
+  min-width: 25.56rem; }
   .sign-form__label {
     margin-top: 1.5rem;
     color: #000;
@@ -324,6 +325,9 @@ body {
     text-decoration: underline;
     cursor: pointer; }
 
+.side-nav__list {
+  list-style: none; }
+
 .container {
   display: grid;
   grid-template-columns: [full-start] 1fr [content-start] repeat(12, [col-start] minmax(min-content, 11rem) [col-end]) [content-end] 1fr [full-end];
@@ -345,7 +349,7 @@ body {
   z-index: 1000; }
   @media only screen and (max-width: 87.5em) {
     .navigation {
-      padding: 1rem 0; } }
+      padding: 1rem 2rem; } }
 
 .header-container {
   grid-column: col-start 1 / col-end 12;
@@ -428,9 +432,29 @@ body {
 
 .signin-left {
   grid-row: 1/2;
-  grid-column: col-start 1 / col-start 4;
-  width: 27rem;
-  justify-self: center; }
+  grid-column: col-start 2 / col-start 4;
+  width: 35rem;
+  justify-self: center;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .2s; }
+  @media only screen and (max-width: 62.5em) {
+    .signin-left {
+      grid-column: col-start 2 / col-end 5;
+      background-color: rgba(236, 240, 241, 0.95);
+      width: 70rem;
+      padding: 9rem 18rem;
+      border-radius: 1rem; } }
+  @media only screen and (max-width: 50em) {
+    .signin-left {
+      grid-column: col-start 1 / col-end 12; } }
+  @media only screen and (max-width: 34.375em) {
+    .signin-left {
+      width: 100%;
+      justify-content: center;
+      padding: 9rem; } }
 
 .signin-right {
   grid-row: 1/2;
@@ -441,6 +465,11 @@ body {
   height: calc(100vh - 7rem);
   overflow: hidden;
   z-index: -100; }
+  @media only screen and (max-width: 62.5em) {
+    .signin-right {
+      grid-column: col-start 1 / col-end 12;
+      background-image: url("../../img/stephan-valentin-6NT7jy6OU9I-large.jpg");
+      background-size: cover; } }
 
 .dashboard-main {
   grid-column: col-start 3 / col-end 12;
@@ -448,7 +477,7 @@ body {
   grid-template-columns: [full-start] 1fr [content-start] repeat(12, [col-start] minmax(min-content, 11rem) [col-end]) [content-end] 1fr [full-end];
   background-color: #ECF0F1; }
 
-.side-nav {
+.side-bar {
   grid-column: col-start 1 / col-end 2;
   grid-row: 2/3;
   background-color: #2C3E50;
