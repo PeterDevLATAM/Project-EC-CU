@@ -133,4 +133,37 @@
       </g>
     </g>
   </symbol>
+
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172 172" id="no-entry">
+    <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none">
+      <path d="M0,172v-172h172v172z" fill="none"></path>
+      <g>
+        <path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM129,93.16667h-86v-14.33333h86z"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172 172" id="check-circle-fill">
+    <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none">
+      <path d="M0,172v-172h172v172z" fill="none"></path>
+      <g>
+        <path d="M148.50824,37.582l-65.65584,77.47224l-33.25448,-31.0116l4.68872,-5.03272l27.98096,26.0924l61.73424,-72.842c-14.46176,-15.59696 -35.1052,-25.38032 -58.00184,-25.38032c-43.62952,0 -79.12,35.49048 -79.12,79.12c0,43.62952 35.49048,79.12 79.12,79.12c43.62952,0 79.12,-35.49048 79.12,-79.12c0,-18.22856 -6.21264,-35.02608 -16.61176,-48.418z"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172 172" id="check-circle">
+    <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none">
+      <path d="M0,172v-172h172v172z" fill="none"></path>
+      <g>
+        <path d="M86,16.125c-38.6958,0 -69.875,31.1792 -69.875,69.875c0,38.6958 31.1792,69.875 69.875,69.875c38.6958,0 69.875,-31.1792 69.875,-69.875c0,-7.5166 -1.00781,-15.01221 -3.69531,-22.00391l-8.73437,8.56641c1.0708,4.3042 1.67969,8.6084 1.67969,13.4375c0,32.7959 -26.3291,59.125 -59.125,59.125c-32.7959,0 -59.125,-26.3291 -59.125,-59.125c0,-32.7959 26.3291,-59.125 59.125,-59.125c16.125,0 30.61231,6.42481 40.81641,16.62891l7.55859,-7.55859c-12.3667,-12.3667 -29.5625,-19.82031 -48.375,-19.82031zM146.63672,39.13672l-60.63672,60.63672l-23.01172,-23.01172l-7.72656,7.72656l26.875,26.875l3.86328,3.69531l3.86328,-3.69531l64.5,-64.5z"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172 172" id="data-pending">
+    <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none">
+      <path d="M0,172v-172h172v172z" fill="none"></path>
+      <g>
+        <path d="M35.83333,21.5c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v100.33333c0,7.90483 6.4285,14.33333 14.33333,14.33333h40.04655c-1.83467,-4.52217 -3.09981,-9.32383 -3.72331,-14.33333h-36.32324v-100.33333h29.89844c2.95983,8.342 10.9229,14.33333 20.26823,14.33333c9.34533,0 17.3084,-5.99133 20.26823,-14.33333h29.89844v36.32324c5.0095,0.6235 9.81117,1.88865 14.33333,3.72331v-40.04655c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333h-43v7.16667c0,3.94883 -3.21783,7.16667 -7.16667,7.16667c-3.94883,0 -7.16667,-3.21783 -7.16667,-7.16667v-7.16667zM129,86c-23.65,0 -43,19.35 -43,43c0,23.65 19.35,43 43,43c23.65,0 43,-19.35 43,-43c0,-23.65 -19.35,-43 -43,-43zM129,100.33333c15.76667,0 28.66667,12.9 28.66667,28.66667c0,15.76667 -12.9,28.66667 -28.66667,28.66667c-15.76667,0 -28.66667,-12.9 -28.66667,-28.66667c0,-15.76667 12.9,-28.66667 28.66667,-28.66667zM132.06543,108.33985l-11.46386,21.65397l15.0332,15.0332l7.60059,-7.60059l-9.42025,-9.42025l7.75456,-14.64128z"></path>
+      </g>
+    </g>
+  </symbol>
 </svg>

@@ -1,0 +1,80 @@
+
+.header-container {
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+
+  @include respond(bp-xl) {
+    padding: 5rem;
+  }
+  @include respond(bp-m) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content) 1fr;
+  }
+}
+.header {
+  @include respond(bp-m) {
+    grid-column: 1/3;
+  }
+}
+.benefits-container {
+  grid-column: full-start/ full-end;
+  background-color: $color-secondary-1-0;
+  color: $color-white;
+  @include general-layout;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  padding-top: 20rem;
+  padding-bottom: 25rem;
+}
+
+.benefits {
+  grid-column: content-start/ content-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-column-gap: 8rem;
+  grid-row-gap: 10rem;
+  justify-content: center;
+  justify-items: center;
+  &__header {
+    grid-column: 1/-1;
+  }
+  @include respond(bp-xl) {
+    padding: 5rem;
+  }
+}
+
+.prices {
+  grid-column: col-start 1 / col-end 12;
+
+  display: grid;
+  grid-gap: 5rem;
+  justify-content: center;
+  justify-items: center;
+
+  grid-template-columns: minmax(min-content, 95rem);
+  padding: 20rem 0;
+  margin-bottom: 10rem;
+
+  @include respond(bp-xl) {
+    padding: 5rem;
+  }
+  @include respond(bp-s) {
+    padding: 1rem;
+  }
+}
+.footer-container {
+  grid-column: full-start/ full-end;
+  background-color: $color-secondary-2-0;
+  @include general-layout;
+}
+.footer {
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  grid-gap: 8rem;
+}
