@@ -476,6 +476,9 @@ body {
     border-left: 1px solid black;
     border-bottom: 1px solid black; }
 
+.benef-card__table {
+  padding: 0 4.3rem; }
+
 .container {
   display: grid;
   grid-template-columns: [full-start] 1fr [content-start] repeat(12, [col-start] minmax(min-content, 12rem) [col-end]) [content-end] 1fr [full-end];
