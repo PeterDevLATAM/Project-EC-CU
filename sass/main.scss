@@ -11,10 +11,12 @@
 
 // Components
 @import "components/general-components";
+@import "components/dash-side-nav";
 
 // Layout
 @import "layout/general-layout";
 // Pages
 @import "pages/home";
 @import "pages/signin-signup";
+@import "pages/user-dashboard";
 

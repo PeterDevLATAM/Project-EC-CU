@@ -25,34 +25,3 @@
   z-index: 1000;
 }
 
-///////// DASHBOARD PAGE
-
-.dashboard-container {
-  grid-column: content-start / content-end;
-  display: grid;
-  grid-template-columns: 27.7rem 1fr;
-  height: calc(100vh - 7rem);
-}
-.dashboard-main {
-  grid-column: 2/3;
-  background-color: $color-white;
-  height: 100%;
- padding: 0 7.5rem;
-}
-.side-bar {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  background-color: $color-secondary-2-0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.dash-bottom{
-  display: grid;
-  grid-template-columns: 1.7fr 2fr;
-  grid-gap: 6rem;
-  margin-top: 9.6rem;
-  height: 42rem;
-}
-
