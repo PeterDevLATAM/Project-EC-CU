@@ -468,7 +468,7 @@
   }
 }
 
-.btn-benef{
+.btn-blue{
   font-family: inherit;
   text-transform: uppercase;
   font-weight: 600;
@@ -490,5 +490,36 @@
   &:hover{
     background-color: $color-secondary-2-1;
     transform: translateY(-2px);
+  }
+}
+
+.conf-user-card{
+  margin: 0 auto;
+  max-width: 72.5rem;
+  padding: 5.6rem 6rem;
+  display: flex;
+  align-items:center;
+
+  &__avatar{
+    position: relative;
+    width: 13.6rem;
+    margin-right: 13.4rem;
+  }
+  &__photo{
+    width: 13.6rem;
+    height: 13.6rem;
+    border-radius: 50%;
+  }
+  &__camera{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50% ;
+    padding: .4rem;
+    background-color: $color-secondary-1-0;
+    fill: white;
+    border: 1px solid white;
+    position: absolute;
+    right: .6rem;
+    top: 0;
   }
 }

@@ -434,7 +434,7 @@ body {
 .benef-card {
   padding: 0 4.7rem; }
 
-.btn-benef {
+.btn-blue {
   font-family: inherit;
   text-transform: uppercase;
   font-weight: 600;
@@ -446,14 +446,40 @@ body {
   color: #ECF0F1;
   padding: 1.1rem;
   transition: all .2s; }
-  .btn-benef__icon {
+  .btn-blue__icon {
     width: 2.2rem;
     height: 2.2rem;
     fill: #ECF0F1;
     margin-left: 1rem; }
-  .btn-benef:hover {
+  .btn-blue:hover {
     background-color: #3D566F;
     transform: translateY(-2px); }
+
+.conf-user-card {
+  margin: 0 auto;
+  max-width: 72.5rem;
+  padding: 5.6rem 6rem;
+  display: flex;
+  align-items: center; }
+  .conf-user-card__avatar {
+    position: relative;
+    width: 13.6rem;
+    margin-right: 13.4rem; }
+  .conf-user-card__photo {
+    width: 13.6rem;
+    height: 13.6rem;
+    border-radius: 50%; }
+  .conf-user-card__camera {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: .4rem;
+    background-color: #3498DB;
+    fill: white;
+    border: 1px solid white;
+    position: absolute;
+    right: .6rem;
+    top: 0; }
 
 .side-nav {
   padding-top: 10rem; }
