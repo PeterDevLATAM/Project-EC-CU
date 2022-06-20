@@ -317,18 +317,15 @@
   }
 }
 
-
 .oper-card {
   width: 100%;
   margin-bottom: 6rem;
   padding: 3rem 4.7rem;
-  
 }
 .oper-table {
   border-collapse: collapse;
   margin: 2.6rem 0;
   width: 100%;
-
 
   &:last-child {
     border-bottom: 1px solid $color-grey-2;
@@ -356,7 +353,7 @@
   &__text {
     font-weight: 300;
     font-size: 1.6rem;
-    &--light{
+    &--light {
       font-size: 1.4rem;
       color: $color-grey-2;
     }
@@ -402,7 +399,7 @@
     background-color: #cd7f32;
   }
   &--title {
-    margin-left: 2rem;;
+    margin-left: 2rem;
   }
 }
 
@@ -418,14 +415,13 @@
     font-weight: 400;
     font-size: 1.8rem;
     margin-bottom: 2.4rem;
-
   }
   &__progress-bar {
     height: 1rem;
     border-radius: 1rem;
     background-color: $color-grey-3;
     position: relative;
-    &--1{
+    &--1 {
       width: 33%;
       background-color: $color-secondary-1-0;
       position: absolute;
@@ -442,7 +438,6 @@
     display: flex;
     align-items: center;
     margin-top: 1rem;
-
   }
   &__quantity {
     margin-right: 2.2rem;
@@ -462,13 +457,13 @@
   }
 }
 
-.benef-card{
+.benef-card {
   padding: 0 4.7rem;
-  &__table{ 
+  &__table {
   }
 }
 
-.btn-blue{
+.btn-blue {
   font-family: inherit;
   text-transform: uppercase;
   font-weight: 600;
@@ -480,46 +475,103 @@
   background-color: $color-secondary-2-0;
   color: $color-white;
   padding: 1.1rem;
-  transition: all .2s;
-  &__icon{ 
+  transition: all 0.2s;
+  &__icon {
     width: 2.2rem;
     height: 2.2rem;
     fill: $color-white;
     margin-left: 1rem;
   }
-  &:hover{
+  &:hover {
     background-color: $color-secondary-2-1;
     transform: translateY(-2px);
   }
 }
 
-.conf-user-card{
-  margin: 0 auto;
+.conf-user {
   max-width: 72.5rem;
   padding: 5.6rem 6rem;
   display: flex;
-  align-items:center;
+  align-items: center;
 
-  &__avatar{
+  &__avatar {
     position: relative;
     width: 13.6rem;
     margin-right: 13.4rem;
   }
-  &__photo{
+  &__photo {
     width: 13.6rem;
     height: 13.6rem;
     border-radius: 50%;
   }
-  &__camera{
+  &__camera {
     width: 3rem;
     height: 3rem;
-    border-radius: 50% ;
-    padding: .4rem;
+    border-radius: 50%;
+    padding: 0.4rem;
     background-color: $color-secondary-1-0;
     fill: white;
     border: 1px solid white;
     position: absolute;
-    right: .6rem;
+    right: 0.6rem;
     top: 0;
+  }
+}
+
+.conf-user-data {
+  margin: 6rem  0;
+  max-width: 72.5rem;
+  padding: 0 4.3rem 8.9rem;
+}
+.user-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  &__item {
+    padding-top: 4.1rem;
+    position: relative;
+  }
+  &__input {
+    width: 27.9rem;
+    height: 3.6rem;
+    border-radius: 1rem;
+    border: 1px solid $color-grey-1;
+    &::placeholder {
+      font-family: inherit;
+      font-size: 1.3rem;
+      color: $color-grey-1;
+      padding-left: 1rem;
+    }
+  }
+  &__label {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  &__upload-btn {
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: $color-secondary-1-0;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    position: absolute;
+    right: 0;
+  }
+  &__upload-svg {
+    width: 1.8rem;
+    height: 1rem;
+    fill: white;
+  }
+  &__change-pw-btn {
+   position: absolute;
+   width: 12.3rem;
+   height: 3.6rem;
+   text-transform: uppercase;
+   font-family: inherit;
+   font-size: 1.3rem;
+   border-radius: 1rem;
+   background-color: $color-secondary-1-0;
+   color: white;
+   border: none;
   }
 }

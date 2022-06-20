@@ -42,37 +42,167 @@
 
     <div class="dashboard-container">
       <main class="dashboard-main">
-        <div class="conf-user-card dash-card">
-          <div class="conf-user-card__avatar">
-            <img
-              class="conf-user-card__photo"
-              src="/img/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
-              alt="Profile pic"
-            />
-            <svg class="conf-user-card__camera">
-              <use href="img/SVG/sprite.svg#camera" />
-            </svg>
-          </div>
-          <div class="user-c-content">
-            <div class="user-c-content__name">Reinaldo Tamayo Jimenez</div>
-            <div class="user-c-content__progress-bar">
-              &nbsp;
-              <div
-                class="user-c-content__progress-bar user-c-content__progress-bar--1"
-              >
+        <div class="dash-user-container">
+          <div class="conf-user dash-card">
+            <div class="conf-user__avatar">
+              <img
+                class="conf-user__photo"
+                src="/img/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
+                alt="Profile pic"
+              />
+              <svg class="conf-user__camera">
+                <use href="img/SVG/sprite.svg#camera" />
+              </svg>
+            </div>
+            <div class="user-c-content">
+              <div class="user-c-content__name">Reinaldo Tamayo Jimenez</div>
+              <div class="user-c-content__progress-bar">
                 &nbsp;
+                <div
+                  class="user-c-content__progress-bar user-c-content__progress-bar--1"
+                >
+                  &nbsp;
+                </div>
+              </div>
+              <div class="user-c-content__progress-def">
+                Preogreso para categoria Plata
+              </div>
+              <div class="user-c-content__data">
+                <div class="user-c-content__quantity">4 envios</div>
+                <div class="user-c-content__amount">560 usd</div>
               </div>
             </div>
-            <div class="user-c-content__progress-def">
-              Preogreso para categoria Plata
-            </div>
-            <div class="user-c-content__data">
-              <div class="user-c-content__quantity">4 envios</div>
-              <div class="user-c-content__amount">560 usd</div>
-            </div>
-            
           </div>
-      
+
+          <div class="conf-user-data dash-card">
+            <h4 class="heading heading--card dash-card__title">Tus Datos</h4>
+            <form action="#" class="user-form">
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Nombre
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="Reinaldo"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Apellidos
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="Tamayo Jimenez"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Correo Electrónico
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="reinaldotamayo@gmail.com"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Teléfono
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="+53 58332465"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Documento
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="Cedula de Ciudadania"
+                  />
+                  <button class="user-form__upload-btn">
+                    <svg class="user-form__upload-svg">
+                      <use href="/img/SVG/sprite.svg#upload" />
+                    </svg>
+                  </button>
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Numero de Documento
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="74584254987"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Direccion
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="Calle 803 #34, Apto 12"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Ciudad
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="La Habana"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  No. Cuenta
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="2200457893"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Banco
+                  <input
+                    type="text"
+                    class="user-form__input"
+                    placeholder="Pichincha"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <label class="user-form__label">
+                  Contraseña
+                  <input
+                    type="password"
+                    class="user-form__input"
+                    placeholder="********"
+                  />
+                </label>
+              </div>
+              <div class="user-form__item">
+                <button class="user-form__change-pw-btn">Cambiar</button>
+              </div>
+            </form>
+          </div>
+          <button class="btn-blue">
+            <p class="btn-blue__text">Añadir Beneficiario</p>
+            <svg class="btn-blue__icon">
+              <use href="img/SVG/sprite.svg#save" />
+            </svg>
+          </button>
         </div>
       </main>
 

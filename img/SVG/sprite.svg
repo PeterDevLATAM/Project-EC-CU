@@ -190,4 +190,20 @@
       </g>
     </g>
   </symbol>
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172 172" id="upload">
+    <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none">
+      <path d="M0,172v-172h172v172z" fill="none"></path>
+      <g>
+        <path d="M34.4,17.2c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v97.46667c0,6.33533 5.13133,11.46667 11.46667,11.46667h45.86667v-72.15938l-13.14636,13.14636c-2.24173,2.24173 -5.86556,2.24173 -8.10729,0c-2.24174,-2.24173 -2.24174,-5.86556 0,-8.10729l22.93333,-22.93333c1.118,-1.118 2.58591,-1.67969 4.05364,-1.67969c1.46773,0 2.93564,0.56169 4.05364,1.67969l22.93333,22.93333c2.24173,2.24173 2.24173,5.86556 0,8.10729c-2.24173,2.24173 -5.86556,2.24173 -8.10729,0l-13.14636,-13.14636v72.15938h45.86667c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-97.46667c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667zM91.73333,137.6h-11.46667v22.93333c0,3.1648 2.56853,5.73333 5.73333,5.73333c3.1648,0 5.73333,-2.56853 5.73333,-5.73333z"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172 172" id="save">
+    <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none">
+      <path d="M0,172v-172h172v172z" fill="none"></path>
+      <g>
+        <path d="M34.4,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v103.2c0,6.33533 5.13133,11.46667 11.46667,11.46667h103.2c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-91.73333l-22.93333,-22.93333h-11.46667v34.4c0,3.1648 -2.56853,5.73333 -5.73333,5.73333h-51.6c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333v-34.4zM91.73333,22.93333v28.66667h11.46667v-28.66667zM57.33333,91.73333h57.33333c6.33533,0 11.46667,5.13133 11.46667,11.46667v34.4h-80.26667v-34.4c0,-6.33533 5.13133,-11.46667 11.46667,-11.46667z"></path>
+      </g>
+    </g>
+  </symbol>
 </svg>

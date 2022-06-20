@@ -445,7 +445,7 @@ body {
   background-color: #2C3E50;
   color: #ECF0F1;
   padding: 1.1rem;
-  transition: all .2s; }
+  transition: all 0.2s; }
   .btn-blue__icon {
     width: 2.2rem;
     height: 2.2rem;
@@ -455,31 +455,80 @@ body {
     background-color: #3D566F;
     transform: translateY(-2px); }
 
-.conf-user-card {
-  margin: 0 auto;
+.conf-user {
   max-width: 72.5rem;
   padding: 5.6rem 6rem;
   display: flex;
   align-items: center; }
-  .conf-user-card__avatar {
+  .conf-user__avatar {
     position: relative;
     width: 13.6rem;
     margin-right: 13.4rem; }
-  .conf-user-card__photo {
+  .conf-user__photo {
     width: 13.6rem;
     height: 13.6rem;
     border-radius: 50%; }
-  .conf-user-card__camera {
+  .conf-user__camera {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    padding: .4rem;
+    padding: 0.4rem;
     background-color: #3498DB;
     fill: white;
     border: 1px solid white;
     position: absolute;
-    right: .6rem;
+    right: 0.6rem;
     top: 0; }
+
+.conf-user-data {
+  margin: 6rem  0;
+  max-width: 72.5rem;
+  padding: 0 4.3rem 8.9rem; }
+
+.user-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+  .user-form__item {
+    padding-top: 4.1rem;
+    position: relative; }
+  .user-form__input {
+    width: 27.9rem;
+    height: 3.6rem;
+    border-radius: 1rem;
+    border: 1px solid #BABABA; }
+    .user-form__input::placeholder {
+      font-family: inherit;
+      font-size: 1.3rem;
+      color: #BABABA;
+      padding-left: 1rem; }
+  .user-form__label {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: normal; }
+  .user-form__upload-btn {
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: #3498DB;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    position: absolute;
+    right: 0; }
+  .user-form__upload-svg {
+    width: 1.8rem;
+    height: 1rem;
+    fill: white; }
+  .user-form__change-pw-btn {
+    position: absolute;
+    width: 12.3rem;
+    height: 3.6rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    background-color: #3498DB;
+    color: white;
+    border: none; }
 
 .side-nav {
   padding-top: 10rem; }
@@ -557,6 +606,9 @@ body {
   @media only screen and (max-width: 87.5em) {
     .navigation {
       padding: 1rem 2rem; } }
+
+.dash-user-container {
+  padding: 0 7rem; }
 
 .header-container {
   grid-column: col-start 1 / col-end 12;
